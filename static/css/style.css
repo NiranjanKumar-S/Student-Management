@@ -1,0 +1,58 @@
+/* Custom enhancements for EduTrack Student Management System */
+
+body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Card Styling */
+.card-shadow {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05);
+}
+
+/* Form focus highlights */
+.form-control:focus,
+.form-select:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15) !important;
+    outline: none;
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 1rem;
+}
+
+/* Active transitions */
+.transition-smooth {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Table row hovering */
+.table-hover > tbody > tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Mobile Sidebar Drawer behavior */
+@media (max-width: 1023px) {
+    #sidebar.open {
+        transform: translateX(0);
+    }
+}
